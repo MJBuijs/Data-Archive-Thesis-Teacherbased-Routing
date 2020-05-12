@@ -1,0 +1,171 @@
+---
+title: " Using Expert Elicitation and Adaptive Testing to Shorten the End of Primary School Test (EPST)"
+subtitle: "Research Report"
+author: 
+- Marie Buijs, Utrecht University
+- Supervised by prof. dr. A. G. J. Van De Schoot
+date: December 15, 2019
+bibliography: Bibliography_Report.bib
+csl: ieee.csl
+output: bookdown::pdf_document2
+toc: false
+header-includes:
+  \usepackage{hyperref}
+  \usepackage[utf8]{inputenc}
+  \usepackage{caption}
+  \usepackage{subcaption}
+  \usepackage{rotating}
+  \usepackage{array}
+---
+# Introduction 
+During the transition from primary to secondary education in the Netherlands, students are divided into tracks. Several tracks prepare students for different types of secondary education: VWO (pre-university education), HAVO (general secondary education) and VMBO (pre-vocational education) (see Figure \@ref(fig:fig1)). Each student receives an advice on what type of secondary education to pursue. This advice is based on two sources: the teacher and the End of Primary School Test (EPST) that is taken at the end of primary school. The EPST takes multiple days to complete and measures ability in two domains; language and mathematics. Both the advice from the EPST and the teacher can be single or composite. A single advice consists of one level (e.g. HAVO advice), while a composite advice consists of two consecutive levels (e.g. HAVO/VWO advice). 
+
+Switching between tracks is possible and relatively easy in the first three years of secondary education. This may lead to a (partial) correction of the advice when the initial placement does not match student ability [@onderwijsinspectie_staat_2019]. Although switching between tracks is possible, the initial track placement is an important factor in a students’ further education. Therefore, the advice a student receives on what education they should pursue needs to be as accurate as possible. However, what should be decided when there is an extreme mismatch between the result of the EPST and the advice by the teacher? The current study will introduce a new way of combining the EPST with the teachers’ advice. In what follows, we provide a historical overview of the ongoing debate in the Netherlands about whether the teacher or test provides the better advice. 
+
+\begin{figure}[h]
+\vspace{10pt}
+\centering 
+\includegraphics[width=0.75\textwidth]{Figures/Afbeelding 1.png}
+\caption{ A graphic representation of the Dutch educational system. After finishing primary school, that children attend from approximately age 4 to 12, children transition to secondary education that consists of several levels. VWO (pre-university education) prepares students for University education (WO). HAVO (General Secondary Education) prepares students for higher professional education (HBO). VMBO (Pre-Vocational Education) consists of 4 different subtypes ranging from the most theoretical (TL track) to the most vocational (BB track). The different VMBO levels prepare students for different levels of Vocational Education and Training (MBO). }
+\label{fig:fig1}
+\vspace{10pt}
+\end{figure}
+
+## Historical overview
+Before 2015, the advice students received on what track to pursue, was based on the score they achieved on the EPST. The EPST was designed by Cito, the main educational testing service in the Netherlands. Not everyone was in favor of basing the advice solely on the EPST. Critics argued that the test captures just one moment in time [@kamerman_leerkracht_2015]. In addition, they argued that the test does not to take other factors into account such as discipline, motivation and attitude [@de_regt_welkom_2004].
+
+In 2015, there was a change in policy [@staatssecretaris_OCW_toetsbesluit_2014]. The main change being that the teachers’ advice would be leading in school advisement. However, the result of an EPST may be used to raise the advised level by the teacher, but not to lower it. In addition to making the teachers’ advice leading, multiple test providers would be allowed to publish their version of the EPST [@staatssecretaris_OCW_toetsbesluit_2014], [@noauthor_wijzigingswet_2014], [@noauthor_policy_2019]. Furthermore, taking an EPST became obligatory after the teachers advice is communicated. The idea of making the teachers’ advice leading in school advisement was not without controversy. Opponents of this idea argued that teachers are not sufficiently capable of weighing information and obtaining the right decision [@niessen_leerkracht_2016].
+
+In the summer of 2019, the House of Representatives published a letter [@slob_eindevaluatie_2019] evaluating the policy change since 2015. The letter cites the Centraal Plan Bureau (CPB), who argue that the EPST should play a bigger role in the transition to secondary education [@noauthor_policy_2019]. The authors state that inequality has increased due to the opportunity for wealthy parents to arrange additional training when they disagree with the advised level. Furthermore, they argue that the incentive to perform well has decreased for students who are content with the advised level. In contrast, Lek & Van De Schoot are in favor of using both the EPST and teachers’ advice [@lek_transition_2019]. The authors show that both have their advantages and consider a combination of both to be best. The House of Representatives decided not to make the EPST leading again, but to change the timing of the EPST and teachers’ advice. By this change, the EPST is taken two weeks after the teachers decide on their advice to prevent additional training for the test. Furthermore, it would be possible to refrain from communicating the teachers’ advice to keep students motivated [@slob_eindevaluatie_2019]. 
+ 
+
+## Adaptive testing 
+Since 2018, one of the EPSTs schools can choose from, is the multistage adaptive version of the EPST by Cito [@noauthor_terugblik_2018]. In adaptive testing, the selection of an item is adapted to an individuals performance using Item Response Theory (IRT). IRT assumes that an individual’s probability of giving a certain response depends on person- and item characteristics (e.g. ability and item difficulty) [@van_der_linden_elements_2010, [@harris_ncme_1989]. The latent ability of each individual is estimated after completion of each item. Subsequent items are selected to match this estimated ability level. The most information about the ability of an individual is obtained when item difficulty aligns with the true ability, resulting in more precise ability estimates. 
+
+For the adaptive EPST, Cito implemented a variation on adaptive testing that administers various sets of items (modules), called Multistage testing (MST) [@mead_introduction_2006]. Instead of adapting what item is presented, an entire module is presented based on the match of its difficulty with the estimated student ability. In MST the number of stages and modules can be varied. In the adaptive multistage EPST that is implemented by Cito, each day corresponds to one stage that has respectively one, two and three modules per stage (see Figure \@ref(fig:fig2a)). 
+
+In the current design, the first stage (routing stage), takes place on day one. On this day, all students take the same module which gives an initial estimate of ability. This ability estimate determines what module is presented to the students in the second stage: an easier or a more difficult module. Performance in the second stage provides a new estimate of ability. In the final stage on day three, based on this new estimate, the student is once more presented with an easier, intermediate or more difficult module [@noauthor_terugblik_2018]. 
+
+\begin{figure}[t]
+\renewcommand{\thesubfigure}{\Alph{subfigure}}
+\label{fig:fig2}
+      \begin{subfigure}[r]{\textwidth}
+              \centering
+              \hspace{7pt}
+              \includegraphics[width=0.97\textwidth]{Figures/Afbeelding 2A.png}
+              \caption{}
+              \label{fig:fig2a}
+      \end{subfigure}
+      \begin{subfigure}[c]{\textwidth}
+              \centering
+              \includegraphics[width=\textwidth]{Figures/Afbeelding 2B.png}
+              \caption{}
+              \label{fig:fig2b}
+      \end{subfigure}
+      \caption{(A) Current adaptive multistage design used by Cito. (B) Example of a new (hypothetical) design, where the teachers’ expectation (as elicited on day 0 using a digital tool [15]) about a student determines the difficulty of the module on day 1. Both lines a and b show a possible route of a student who is capable of VWO but is expected to score low by their teacher.}\label{fig:fig2}
+\end{figure}
+
+## Combining the adaptive EPST and teachers opinion using expert elicitation
+In the future, the teachers’ opinion could be integrated with the multistage adaptive EPST of Cito. Ideally, not only the teachers’ opinion, but also their (un)certainty about their opinion is taken into account. A method to formalize the teachers’ opinion to take uncertainty into account, is expert elicitation. Expert elicitation is the process of formalizing experts opinions in a way that these can be used statistically [@ohagan_uncertain_2006]. Lek and Van De Schoot tested an online application with icons to elicit teachers’ judgments about their students’ ability [@lek_development_2018]. The application presents a distribution that represents the teachers’ knowledge and their (un)certainty. The information from this application could potentially enrich the EPST design by combining expert elicitation [@ohagan_uncertain_2006] with multistage adaptive testing [@mead_introduction_2006] (see Figure \@ref(fig:fig2b)), see [@berger_improvement_2019]. Both the paper-based EPST and the current version of the multistage EPST take three days to complete [@noauthor_terugblik_2018]. A method to shorten the overall duration of multistage EPST by one day, could be to use expert knowledge of the teacher to determine the starting level of students on day one (see Figure \@ref(fig:fig2b), day 0). 
+
+However, immediately implementing this method would be a political challenge. As the previous debate underlines, allowing the teachers’ opinion to influence the EPST score of students is a sensitive matter. One argument is that it would be unfair if a student is provided with a completely different advice because of their teachers’ judgment. Therefore, it will be investigated, if the teachers’ knowledge is used to determine the starting level of students, what the effect will be on the final advice when an extreme mismatch between teacher and test occurs. For example, consider a student who is capable of obtaining VWO advice in the current adaptive EPST of Cito (see Figure \@ref(fig:fig2a)). Now assume that the teacher expects this student to score low (See Figure \@ref(fig:fig2b)). The teachers' judgment results in the student starting with the easier module on day one. This student performs adequately on both day one and two, which would result in the same VWO advice as the student would have obtained in the original design (Figure \@ref(fig:fig2b), situation a). However, if the same student had performed suboptimal on day one, for example due to stress, but nevertheless makes the module on day two well, this same student should be able to obtain VWO advice (Figure \@ref(fig:fig2b), situation b). 
+
+## The current study
+First, it is important to determine how often a severe mismatch occurs between the EPST advice and the teachers’ advice. Although research about the (dis)agreement between EPST and teachers’ advice has been conducted before, information about the frequency of extreme mismatches is missing [@lek_transition_2019]. When it is clear how often extreme mismatches occur, synthetic data will be generated and used in a simulation study. This simulation study will examine the effect of combining expert elicitation with the adaptive testing procedure when extreme mismatches occur (see Figure \@ref(fig:fig2b)). It will be estimated how many items are needed to provide students with the same advice as the regular adaptive EPST. The number of items needed will be compared to the 140 items used in the current test version of Cito [@noauthor_centrale_2018]. In order to implement expert elicitation methods in the actual testing procedure of Cito, two conditions have to be met. First, the simulation study has to show that using expert elicitation is a feasible method to determine the starting level. Second, the duration of the test has to stay reasonable. If these conditions are met, using teachers’ expertise would lead to a shorter duration of the overall test, aligning test items with students’ capabilities.
+
+The current report focuses on the first part of the study. Using longitudinal data from Statistics Netherlands (CBS), it is investigated how often extreme mismatches between the EPST advice and the teachers’ advice occur in the Netherlands. Furthermore, it is investigated what track students with an extreme mismatch follow in the third year of secondary education. The current study provides a starting point to generate synthetic data that will be implemented in a simulation study. This simulation study will investigate the effectiveness of using expert elicitation to determine the starting level in multistage adaptive testing. 
+
+# Methods
+## Data
+The data used for this study are non-public microdata from Statistics Netherlands (CBS). All analyses were performed using R [@r_core_team_r:_2019] in the remote secured online environment of CBS. The used datafiles are the “Citotab” data from the school year 2014/2015 and the “Onderwijsinschrtab” data  from the year 2015/2016 and 2017/2018, corresponding to the first and third year of secondary education ^[For information about accessing these files: \newline https://www.cbs.nl/en-gb/our-services/customised-services-microdata/microdata-conducting-your-own-research]. The Citotab file contains information about the results of the EPST and the teachers’ advice of students in the Netherlands [@noauthor_documentatie_2019]. The Onderwijsinschrtab file contains information on the enrollment of all students in secondary and higher education in the Netherlands [@noauthor_documentatie_2019-1]. All files were combined to match the EPST score and teachers’ advice from the Citotab file with the placement in secondary education one and three years after completing primary school from the Onderwijsinschrtab files. In the CBS files, the VMBO-GL and VMBO-TL tracks were combined and referenced to as VMBO-GT. These tracks are similar as the VMBO-GL track has one less theoretical course and one more vocational course than the VMBO-TL track. 
+
+## Inclusion criteria
+The Citotab file includes information about students whose primary school authorized Cito to share their results with CBS. Only students who met the following inclusion criteria were included in this study: (1) students were registered in the GBA (Administration of the Municipality); (2) both the teachers’ advice and the EPST score were available; (3) the placement in the first and third year after completing primary school was known and (4) student were not enrolled in practical education in the first or third year of secondary education^[Practical education focusses on children who are unlikely to be able successfully finish VMBO-BB. This criterion was used because the lowest category in the EPST is VMBO-BB]. After selection, 119754 students were included (see Figure \@ref(fig:fig3)).
+
+
+## Analysis
+This study investigated how often extreme mismatches between the EPST advice and the teachers’ advice occurred in the Netherlands.  To quantify this mismatch, the difference between each single advice was considered one level difference. The difference between an overlapping single and a composite advice was considered to be .5 level difference. For example, an overlapping composite advice of the teacher (HAVO/VWO) and a single advice of the test (HAVO) was considered .5 level difference, whereas the difference between two single advices (HAVO and VWO) was considered one level difference. The mismatches between teachers’ advice and EPST advice are obtained by creating a contingency table. For the subset of students whose EPST- and teachers’ advice severely mismatch, their advices were compared with the placement in the third year of high school as an indication of their true ability.
+
+## Ethical approval
+This study is approved by the Ethics Committee of the Faculty of Social and Behavioral Sciences of Utrecht University (FETC19-215). Before publication, results were tested by CBS to prevent publication of identifiable information about individuals^[Also see: \newline https://www.cbs.nl/nl-nl/onze-diensten/maatwerk-en-microdata/microdata-zelf-onderzoek-doen/export-van-gegevens].
+
+\begin{figure}[!h]
+\vspace{25pt}
+\centering
+\vspace{5pt}
+\includegraphics[width=\textwidth]{Figures/Afbeelding 3.png}
+\caption{Schematic overview of the number of students in the datafile ($n$ = 163794) and the numbers of students included in the present study ($n$ = 119754).}
+\label{fig:fig3}
+\end{figure}
+
+\newpage
+# Results
+When examining the amount of overlap between teachers’ and EPST advice, it showed that in 72.8% of the cases, the teachers’ and EPST advice were equal or differ by .5 level (see Table \@ref(tab:tab1)). This result indicates that most of the time, the EPST and teacher are in reasonable agreement. However, the EPST and teacher do not always agree. The most severe mismatch possible, where one advice is VWO and the other advise is VMBO-BB, occurred only twice (.002%). A less extreme, but still severe mismatch of three or more levels affected 120 students (.1%). 
+
+For most students whose EPST- and teachers’ advice differed by three or more levels, the eventual placement in the third year of secondary education lied 1.5 level of less away from the teachers’ advice (see Figure \@ref(fig:fig4)). This result implies that the advice of the teacher is a better indication for eventual track placement than the EPST advice for most students.
+
+\begin{table}[h!]
+\centering
+\vspace{30pt}
+\caption{Number of times that each level of mismatch occurs ($n$=119754)}
+\label{tab:tab1}
+\begin{tabular}{lllllll}
+Levels of mismatch                          & & \multicolumn{5}{l}{Frequency  (Percentage)}\\
+\hline
+EPST advice equals teachers’ advice         & & 44975 & (37.5\%)        & & &\\
+EPST- and teachers' advice differ 0.5 level & & 42238 & (35.3\%)        & & &\\
+EPST- and teachers’ advice differ 1 level   & & 20371 & (17.0\%)        & & &\\
+EPST- and teachers' advice differ 1.5 levels& & 8612  & (7.2\%)         & & &\\
+EPST- and teachers' advice differ 2 levels  & & 2757  & (2.3\%)         & & &\\
+EPST- and teachers' advice differ 2.5 levels& & 681   & (0.6\%)         & & &\\
+EPST- and teachers' advice differ 3 levels  & & 104   & (0.086\%)       & & &\\
+EPST- and teachers' advice differ 3.5 levels& & 14    & (0.012\%)       & & &\\
+EPST- and teachers' advice differ 4 levels  & & 2     & (0.002\%)       & & &\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\vspace{25pt}
+\centering
+\caption{Contingency table of EPST advice and teachers' advice}
+\label{tab:tab2}\centering
+\begin{tabular}{p{2.5cm}p{1.1cm}p{1.1cm}p{1.1cm}p{1.1cm}p{1.1cm}p{1.1cm}p{1.1cm}p{1.1cm}p{2.5cm}}
+EPST $\rightarrow$ \newline Teacher $\downarrow$ & VMBO-BB &VMBO-BB/KB &VMBO-KB &VMBO-GT &GT/ HAVO &HAVO &HAVO/ VWO &VWO &Marginal Teachers' advice \\
+\hline
+VMBO-BB      & 4865    &2694       &727     &470     &174      &32*   &5*       &1*   &8968\\
+VMBO-BB/KB   & 1017    &1255       &489     &454     &195      &40    &12*      &1*   &3463\\
+VMBO-KB      & 1706    &4591       &2839    &3402    &1978     &586   &230      &15*  &15347\\
+VMBO-GT      & 525     &2935       &3183    &6178    &6365     &3167  &1863     &185  &24401\\
+GT/HAVO & 40      &414        &634     &1852    &2996     &2316  &2045     &283  &10580\\
+HAVO         & 15*     &153        &325     &1400    &3814     &5095  &8844     &3155 &22801\\
+HAVO/VWO     & 1*      &16*        &44      &236     &818      &1592  &4771     &3680 &11158\\
+VWO          & 1*      &7*         &14*     &57      &229      &768   &4984     &16976&23036\\
+\hline
+Marginal EPST advice &8170 &12065  &8255    &14049   &16569    &13596 &22754    &24296&119754
+\end{tabular}
+\vspace{10pt}
+\end{table}
+
+
+\begin{figure} [h!]
+\centering 
+\vspace{20pt}
+\includegraphics[width=0.95\textwidth]{Figures/Afbeelding 4.png}
+\newline
+$Note.$ Fewer than 10 students were placed in a broad track (undifferentiated track).
+\caption{Graphical representation of the eventual placement of the students whose EPST- and teachers’ advice differ by three or more levels ($n$=120). 96 students (80\%) are placed within 1.5 level of the teachers’ advice.}
+\label{fig:fig4}
+\vspace{35pt}
+\end{figure}
+
+\newpage
+# Discussion
+The advice students receive on what educational track they should pursue, can be based on the teachers’ advice and the EPST results. The debate on what source provides the better advice is still ongoing. This paper introduced a new idea to combine both sources of information to shorten the EPST, while still all advices can be obtained by students. To investigate the feasibility of this method, a simulation study will be performed. In order to create realistic starting points for this simulation, the current study investigated how often a severe mismatch occurred between the EPST advice and the teachers’ advice occurs. 
+
+The results show that for most students the EPST- and teachers’ advice are in agreement. Although only a small percentage (0.1%) of students is affected by a severe mismatch of more than three levels, this mismatch may have a vast influence on students’ school career. For most students who are affected by a severe mismatch, eventual track placement in the third year of secondary education matches closer to the teachers’ advice than the EPST advice. For these students, the influence of the teachers’ knowledge on their EPST score when using expert elicitation to determine the starting level of the EPST would not necessarily be disadvantageous. However, for a few students with a severe mismatch eventual track placement in the third year of secondary education matches closer to the EPST advice than the teachers’ advice. For these students, the influence of the teachers’ opinion on their EPST could be disadvantageous. Thus, it is important that students are able to obtain any advice regardless of their teachers’ opinion. 
+
+## Future research
+The current results will be used a starting point for the data generation in a simulation study. This simulation study will examine the effect of combining expert elicitation with the adaptive testing procedure. It will be investigated if the EPST can be shortened by using teachers’ opinions to determine the starting level while each student is able to obtain any advice regardless of their teachers’ opinion. The teachers’ advice will be used as an approximation for the teachers’ expert knowledge that could be elicited using the digital expert elicitation application [@lek_development_2018]. The regular EPST advice will be used as an approximation for the advice a student would obtain in the multistage adaptive EPST [@noauthor_terugblik_2018]. In the simulation study, it will be estimated how many items are needed to provide the student with the same advice as the regular EPST. This number of items will be compared with the 140 items that are currently used in the adaptive EPST to determine if the duration of the test is improved compared to the original design.
+\newpage
+
+# References
