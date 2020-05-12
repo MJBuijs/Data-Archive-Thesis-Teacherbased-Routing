@@ -1,4 +1,4 @@
-# Folder: Overig
+# Overig
 
 
      - tabel5.xlsx; tabel identical to table in Research Report. Used to obtain conditional probabilities for data simulation
