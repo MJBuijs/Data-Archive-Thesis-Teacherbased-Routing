@@ -1,3 +1,1 @@
-# Folder: Results
-
-# Folder where Results are stored (not uploaded to GitHub due to size)
+Folder where Results are stored (not uploaded to GitHub due to size)
