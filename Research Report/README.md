@@ -1,4 +1,4 @@
-# Archive-Research-Report
+# Archive Research Report
 Archive of the Research Report
 
 This repository contains all necessary files to replicate the results of my Research Report for the masters programme Methodology & Statistics for the Behavioral, Biomedical & Social Sciences at Utrecht University. 
