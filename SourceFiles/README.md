@@ -1,6 +1,7 @@
 # Folder: SourceFiles
 
 Contains all the source files
+
      - F0. Params.R; Contains libraries and parameters 
      - F1. Tabels.R; Contains tabels based on the CBS data used in simulations
      - F2. Designs.R; Contains IRT model specifications for each MST simulation
