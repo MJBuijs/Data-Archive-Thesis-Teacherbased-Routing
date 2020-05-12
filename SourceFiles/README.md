@@ -1,4 +1,4 @@
-# Folder: SourceFiles
+# SourceFiles
 
 Contains all the source files
 
