@@ -12,9 +12,9 @@ This repository serves as research archive for the Master's thesis 'The Influenc
 * Results; Folder where results are stored.
 * SourceFiles; Folder containing files that are sourced.
 * Thesis; Folder containing the thesis and ethical clearance form. 
-* /1. Data Simulation.R; Contains script used for data simulation
-* /2. Simulation Designs.R; Contains script used for simulation of different teacher-based routing MST designs
-* /3. Assumptions.R; Contains script checking assumptions
+* \1. Data Simulation.R; Contains script used for data simulation
+* \2. Simulation Designs.R; Contains script used for simulation of different teacher-based routing MST designs
+* \3. Assumptions.R; Contains script checking assumptions
 * 4a. SEM.R; Contains script analyzing standard error of measurement
 * 4b. Track placement recommendations.R; Contains script analyzing the track placement recommendations
 
