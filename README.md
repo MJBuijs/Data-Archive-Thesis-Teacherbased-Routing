@@ -27,7 +27,7 @@ The simulations are based on non-public microdata from Statistic Netherlands (CB
 The results pertaining the number of (mis)matches between teacher's and EPST recommendation are used in the current simulation study and can be found in the folder Overig; file tabel5.xlsx.  
 The R code used to obtain this table as well as the other tables/figures used in the research report, can be found in the Researc Report file. 
   
-The research archive is available through github.com/MJBuijs. The Github repository is public, and therefore 'open access'. The data will be stored for a minimal duration of ten years.
+The research archive is available through github.com/MJBuijs/Data-Archive. The Github repository is public, and therefore 'open access'. The data will be stored for a minimal duration of ten years.
 
 
 
