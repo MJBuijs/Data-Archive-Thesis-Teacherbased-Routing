@@ -1,6 +1,6 @@
 # Data Archive
 
-This repository serves as research archive for the Master's thesis 'The Influence of Teacher-based Routing on the Accuracy and Classification of Multistage Tests" for the masters programme Methodology & Statistics for the Behavioural, Biomedical and Social Science of Utrecht University.
+This repository serves as research archive for the Master's thesis 'The Influence of Teacher-based Routing on the Accuracy and Classification of Multistage Tests" for the masters programme Methodology & Statistics for the Behavioural, Biomedical and Social Science at Utrecht University.
 
 *Contents*
 
