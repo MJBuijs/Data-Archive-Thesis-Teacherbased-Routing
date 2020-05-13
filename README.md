@@ -26,7 +26,7 @@ The final data simulation was run on may 7th-9th, 2020 by Marie Buijs (see "1. D
 The simulations are based on non-public microdata from Statistic Netherlands (CBS). The raw data were analyzed using R in the remote secured online environemnt of CBS. Before exporting the results, the results were tested by CBS to prevent publication of identifiable information about individuals. 
 The results pertaining the number of (mis)matches between teacher's and EPST recommendation that are used in the current simulation study can be found in the folder "Table for simulation". The R code used to obtain this table, as well as the other tables/figures used in the research report, can be found in the Researc Report folder. 
   
-The research archive is available through github.com/MJBuijs/Data-Archive. The Github repository is public, and therefore 'open access'. The data will be stored for a minimal duration of ten years.
+The research archive is available through https://github.com/MJBuijs/Data-Archive-Thesis-Teacherbased-Routing. The Github repository is public, and therefore 'open access'. The data will be stored for a minimal duration of ten years.
 
 
 
