@@ -2,15 +2,15 @@ rm(list = ls())
 set.seed(84)
 
 # source files containing the functions
-file.sources <- list.files(path = "Functions", pattern="*.R", full.names=TRUE)
+file.sources <- list.files(path = "SourceFiles", pattern="*.R", full.names=TRUE)
 sapply(file.sources, source, .GlobalEnv)
 
-# load results
+# load simulated data
 file.load <- list.files(path = "Data", pattern = "*.RData", full.names = TRUE)
 sapply(file.load, load, .GlobalEnv)
 
 ## ---------------------------------------------------------------------------------------------------------------------------------
-# Given these datasets, for each proposed design, allocate students to a module (sequential, not using more cores)
+# Given these datasets, for each proposed design, allocate students to a module 
 Data_allocated_lijst_23 <- lapply(Data_lijst, Allocation, grens_23)
 Data_allocated_lijst_33 <- lapply(Data_lijst, Allocation, grens_33)
 Data_allocated_lijst_43 <- lapply(Data_lijst, Allocation, grens_43)
@@ -18,8 +18,8 @@ Data_allocated_lijst_53 <- lapply(Data_lijst, Allocation, grens_53)
 Data_allocated_lijst_83 <- lapply(Data_lijst, Allocation, grens_83)
 
 ## ---------------------------------------------------------------------------------------------------------------------------------
-## Given allocation of modules, what is estimated to be the ability + advice? 
-registerDoParallel(cores = (detectCores() - 4)) #use more than the standard number of cores to increase computational speed
+## Given allocation of modules, what is estimated to be the ability + track recommendation of the different designs? 
+registerDoParallel(cores = (detectCores() - 4)) #again using parallel programming to speed up the proces
 
 set.seed(84)
 Results_23 <- foreach(k = 1:length(Data_allocated_lijst_23), .verbose=TRUE) %dopar%
@@ -63,7 +63,7 @@ startmodule <- function(test){
   if (sum != 0)
     return(sum)
 }
-lapply(Results, lapply, startmodule) #all good
+lapply(Results, lapply, startmodule) 
 
 # Are there any cases for which the estimated ability overlaps between different track placement recommendations?
 check <- (lapply(Results, lapply, function(x) {
@@ -85,7 +85,7 @@ which(check[[5]]==FALSE)
 
 
 ## ---------------------------------------------------------------------------------------------------------------------------------
-# Combine results
+# Combine results over iterations
 Combined_23 <- bind_rows(Results_23) %>% 
   mutate(mod = "2 modules")
 Combined_33 <- bind_rows(Results_33)%>% 
