@@ -1,7 +1,7 @@
 rm(list = ls())
 set.seed(42)
 
-# source files containing the functions
+# source files containing the functions, CBS table etc.
 file.sources <- list.files(path = "SourceFiles", pattern="*.R", full.names=TRUE)
 sapply(file.sources, source, .GlobalEnv)
 
