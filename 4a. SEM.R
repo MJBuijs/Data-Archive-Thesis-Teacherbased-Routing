@@ -1,7 +1,7 @@
 rm(list = ls())
 set.seed(42)
 
-# source files containing the functions
+# source files containing the functions, CBS table etc. 
 file.sources <- list.files(path = "SourceFiles", pattern="*.R", full.names=TRUE)
 sapply(file.sources, source, .GlobalEnv)
 
@@ -65,7 +65,9 @@ Combined_53 <- Combined_53 %>%
   select(SE_test, theta_estimate, dif, mod, startmod, secmod, true_dif) %>% 
   unite("panel", startmod:secmod, sep = "-", remove = FALSE) 
 
+## ------------------------------------------------------
 # Round SE's and ability estimates and only keep the unique cases (to decrease size of dataset so fewer memory errors occur)
+# Due to size of objects; first round values and decrease number of variables, then filter for unique rows
 Combined_23 <- Combined_23%>% 
   mutate(SE_test = round(SE_test, 3),
          theta_estimate = round(theta_estimate,3)) %>% 
@@ -177,8 +179,11 @@ Combined_83 <- Combined_83%>%
          difference = as.factor(difference),
          true_diff = as.factor(true_diff))
 
-# save(Combined_23, Combined_33, Combined_43, Combined_53, Combined_83, EPST_SE, file = "Results/Combined_uniques.RData")
-# load("Results/Combined_uniques.RData")
+## ------------------------------------------------------
+# Save, empty cache, reload objects; prevents memory issues
+save(Combined_23, Combined_33, Combined_43, Combined_53, Combined_83, EPST_SE, file = "Results/Combined_uniques.RData")
+rm(list = ls())
+load("Results/Combined_uniques.RData")
 
 # Datsets where only the most easy, most intermediate and most difficulty combinations of modules exist + the most extreme mismatches (so most easy module to most difficult module and vice versa)
 extremes_23 <- Combined_23 %>%
@@ -197,6 +202,7 @@ extremes_83 <- Combined_83 %>%
   mutate(panel = dplyr::recode(panel, "1-11" = "easy-difficult", "8-9" =  "difficult-easy", "1-9" = "easy-easy", "8-11"="difficult-difficult", "4-10" = "middle-middle", "5-10" = "middle-middle"))
 plotextreme <- rbind(EPST_SE, extremes_23, extremes_33, extremes_43, extremes_53, extremes_83)
 
+## ---------------------------------------------------------------------------------------------------------------------------------
 #plot Figure 5
 lattice::xyplot(
   SE_test ~ theta_estimate | true_diff ,
