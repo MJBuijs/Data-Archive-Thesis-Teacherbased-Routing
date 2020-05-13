@@ -11,14 +11,14 @@
 rm(list = ls())
 set.seed(42)
 
-# source files containing the functions
+# source files containing functions, import CBS table etc. 
 file.sources <- list.files(path = "SourceFiles", pattern="*.R", full.names=TRUE)
 sapply(file.sources, source, .GlobalEnv)
 
 
 ## ---------------------------------------------------------------------------------------------------------------------------------
-# Create n = iter datalists, with n=n examinees 
-registerDoParallel(cores = (detectCores() - 4)) #use more than the standard number of cores to increase computational speed
+# Simulate and save iter datalists, with n examinees - Use parallel programming to decrease computational time 
+registerDoParallel(cores = (detectCores() - 4)) 
 Data_lijst <- foreach(k = 1:iter, .verbose=TRUE) %dopar%
 
     {
@@ -26,7 +26,7 @@ Data_lijst <- foreach(k = 1:iter, .verbose=TRUE) %dopar%
     }
 
 save(Data_lijst, file = "Data/Datalist.RData")
-registerDoSEQ() #back to sequential programming
+registerDoSEQ() 
 
 ## ---------------------------------------------------------------------------------------------------------------------------------
 # Do some checks
