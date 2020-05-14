@@ -1,7 +1,7 @@
 # Data Archive
 
 This repository serves as research archive for the Master's thesis: "The Influence of Teacher-based Routing on the Accuracy and Classification of Multistage Tests" for the masters programme Methodology & Statistics for the Behavioural, Biomedical and Social Science at Utrecht University.
-The final data simulation was run on May 7th-9th, 2020 by Marie Buijs and was submitted May 11th, 2020. At this point, this paper has not been submitted for publication. 
+The final data simulation was run on May 7th-9th, 2020 by Marie Buijs and was submitted for grading at May 11th, 2020. The paper has not been submitted for publication. 
 
 ### *Abstract*
 
@@ -48,4 +48,5 @@ This study is approved by the Ethics Committee of the Faculty of Social and Beha
 The research archive is available through https://github.com/MJBuijs/Data-Archive-Thesis-Teacherbased-Routing. The Github repository is public and access to the research archive is open-source. A copy of this repository has been stored in the archives of Utrecht University. The data will be stored for a minimal duration of ten years.
 
 
-
+-------------------
+Please contact Marie Buijs (m.j.buijs [at] uu.nl) if you have any questions or comments regarding this repository.
