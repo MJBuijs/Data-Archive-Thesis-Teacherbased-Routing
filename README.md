@@ -33,7 +33,7 @@ To replicate the findings in the paper, run "1. Data Simulation.R", "2. Simulati
 
 ## Privacy 
 
-The simulations are based on non-public microdata from Statistic Netherlands (CBS)(For information on how to access these data, see: https://www.cbs.nl/en-gb/our-services/customised-services-microdata/microdata-conducting-your-own-research). The microdata were analyzed in the remote secured online environment of CBS. Before any results were exported from the remote secured online environment of Statistics Netherlands, the CBS tested the results to prevent publication of any identifiable information about individuals. 
+The simulations are based on non-public microdata from Statistic Netherlands (CBS)(Click [here](https://www.cbs.nl/en-gb/our-services/customised-services-microdata/microdata-conducting-your-own-research) for information about how to access these data). The microdata were analyzed in the remote secured online environment of CBS. Before any results were exported from the remote secured online environment of Statistics Netherlands, the CBS tested the results to prevent publication of any identifiable information about individuals. 
 For this thesis, only the contingency table between the teacher's recommendation and the EPST recommendation was used. No information about individuals can be obtained from this table. 
 For the research report, an additional table containing the placement in the third year of secondary education for students with 3 or more levels mismatch between the teacher's recommendation and the EPST recommendation was used. No specific teacher's recommendation and/or EPST recommendations are mentioned in this table, thus no information about individuals can be obtained from the combination of these tables. 
 
