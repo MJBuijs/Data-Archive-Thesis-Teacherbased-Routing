@@ -2,7 +2,7 @@
 Archive of the Research Report
 
 This repository contains all necessary files to replicate the results of my Research Report for the masters programme Methodology & Statistics for the Behavioral, Biomedical & Social Sciences at Utrecht University. 
-The used data are non-public microdata from the CBS (Statistics Netherlands). For information on how to access these data, [click here](https://www.cbs.nl/en-gb/our-services/customised-services-microdata/microdata-conducting-your-own-research). 
+The used data are non-public microdata from the CBS (Statistics Netherlands). For information on how to access the data, [click here](https://www.cbs.nl/en-gb/our-services/customised-services-microdata/microdata-conducting-your-own-research). 
 
 This archive contains the following files: 
 
