@@ -1,7 +1,6 @@
 # Data Archive
 
-This repository serves as research archive for the Master's thesis: "The Influence of Teacher-based Routing on the Accuracy and Classification of Multistage Tests" for the masters programme Methodology & Statistics for the Behavioural, Biomedical and Social Science at Utrecht University. 
-The thesis was supervised by Dr. D. Hessen and Prof. dr. A.G.J. Van de Schoot from Utrecht University, Department of Methodology & Statistics, and K. Lek, MSc. and Dr. R. Feskens from Stichting Cito. 
+This repository serves as research archive for the Master's thesis: "The Influence of Teacher-based Routing on the Accuracy and Classification of Multistage Tests" for the masters programme Methodology & Statistics for the Behavioural, Biomedical and Social Science at Utrecht University.
 The final data simulation was run on May 7th-9th, 2020 by Marie Buijs and was submitted May 11th, 2020. At this point, this paper has not been submitted for publication. 
 
 ### *Abstract*
@@ -30,7 +29,7 @@ Multistage testing (MST) is a test administration method where the difficulty of
 
 ### *Replicating the analysis*
 
-To replicate the findings in the paper, run "1. Data Simulation.R", "2. Simulation Designs.R", "3. Assumptions.R", "4a. SEM.R", "4b. Track placement recommendations.R" in this order. (see "1. Data Simulation.R" for more details on the version number of the software and operation system of the machine). The file "Software.txt" contains all the information about the OS and software version that were used for this study. The seed number of the random number generator has been included in the seperate R files. 
+To replicate the findings in the paper, run "1. Data Simulation.R", "2. Simulation Designs.R", "3. Assumptions.R", "4a. SEM.R", "4b. Track placement recommendations.R" in this order. The file "Software.txt" contains all the information about the software versions that were used for this study and the recommended hardware. The seed number of the random number generator has been included in the seperate R files. 
 
 ## Privacy 
 
