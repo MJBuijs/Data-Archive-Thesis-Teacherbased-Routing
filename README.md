@@ -18,13 +18,13 @@ Multistage testing (MST) is a test administration method where the difficulty of
 | Figures  | Folder with the figures used in the manuscript  |   
 | Research Report  |  Folder containing the research report and analysis pertaining to appendix A  | 
 | Results  |  Folder where results are stored (not included due to size) | 
-| SourceFiles  | Folder containing files that are sourced | 
+| SourceFiles  | Folder containing files that are sourced (such as functions) | 
 | Table for simulation  | Folder containing the table used as basis for the data simulation | 
-| 1.Data Simulation.R  | Contains script used for data simulation.  | 
-| 2. Simulation Designs.R  |  Contains script used for simulation of different teacher-based routing MST designs. | 
-| 3. Assumptions.R  |  Contains script checking assumptions. | 
-| 4a. SEM.R | Contains script analyzing standard error of measurement.  | 
-| 4b. Track placement recommendations.R |  Contains script analyzing the track placement recommendations. | 
+| 1. Data Simulation.R  | Script used for data simulation.  | 
+| 2. Simulation Designs.R  |  Script used for simulation of different teacher-based routing MST designs. | 
+| 3. Assumptions.R  |  Script that checks assumptions. | 
+| 4a. SEM.R | Script that analyzes the standard error of measurement.  | 
+| 4b. Track placement recommendations.R |  Script that analyzes the track placement recommendations. | 
 | Software.txt  | File containing all information about software packages, platforms and system requirements | 
 
 ### *Replicating the analysis*
