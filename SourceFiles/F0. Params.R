@@ -20,10 +20,10 @@ library(rstatix)
 
 
 # set parameters
-n <- 10000
-iter <- 1000
-mu <- 0 
-sd <- 1
+n <- 10000 #number of students in each dataset
+iter <- 1000 #number of datasets
+mu <- 0 #mean (true) ability
+sd <- 1 #sd (true) ability
 
 
 grens_23 <- c(6)
