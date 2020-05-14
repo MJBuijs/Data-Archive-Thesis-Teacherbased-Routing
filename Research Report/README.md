@@ -6,13 +6,15 @@ The used data are non-public microdata from the CBS (Statistics Netherlands) (Fo
 
 This archive contains the following files: 
 
-    - 1. Table 1.R contains the R-code needed to recreate table 1 through 4.
-    - 2. Results used for Figure 4.R contains the R-code that created table 6, which results are used for figure 4.
-    - 3. Tables: the folder containing all the tables that script 1. and 2. created
-    - Figures: the folder containing all the figures used in the Report.
-    - Bibliography_Report.bib the file containing the references.
-    - Research Report.Rmd the markdown file to create this research report.
-    - Research Report.pdf the knitted research report.
-    - ieee.csl the csl file for references in markdown. 
+| Files/Folders  |  Description   |
+|---|---|
+| 1. Table 1.R  | Script that created the used tables |  
+| 2. Results used for Figure 4.R  |  Script that created table 6, which results are used for figure 4| 
+| 3. Tables  | Folder containing the used tables |   
+| Figures |  Folder containing the figures used in the Report | 
+| Bibliography_Report.bib  |  File containing the references | 
+| Research Report.Rmd | The markdown file of the report  | 
+| Research Report.pdf   |  The pdf file of the report | 
+| ieee.csl | The csl file for references in markdown  | 
 
 
