@@ -10,11 +10,11 @@ This repository serves as research archive for the Master's thesis 'The Influenc
 |---|---|
 | Data  | Folder with simulated data (not included due to size)  |  
 | Figures  | Folder with the figures used in the manuscript  |   
-| Research Report  |  folder containing the research report and analysis pertaining to appendix A  | 
+| Research Report  |  Folder containing the research report and analysis pertaining to appendix A  | 
 | Results  |  Folder where results are stored (not included due to size) | 
-| SourceFiles  | Folder containing files that are sourced  | 
-| Table for simulation  | Folder containing table used as basis for the data simulation | 
-| Thesis  |  Folder containing the thesis and ethical clearance form.  | 
+| SourceFiles  | Folder containing files that are sourced (including a seperate ReadMe file) | 
+| Table for simulation  | Folder containing the table used as basis for the data simulation | 
+| Documents  |  Folder containing the thesis and ethical clearance form.  | 
 | 1.Data Simulation.R  | Contains script used for data simulation.  | 
 | 2. Simulation Designs.R  |  Contains script used for simulation of different teacher-based routing MST designs. | 
 | 3. Assumptions.R  |  Contains script checking assumptions. | 
@@ -35,7 +35,7 @@ For the research report an additional table containing the placement in the thir
 
 ### *Permission*
 
-This study is approved by the Ethics Committee of the Faculty of Social and Behavioural Sciences of Utrecht University, filed under number 19-215. A copy of the approval form can be found in the Thesis folder. 
+This study is approved by the Ethics Committee of the Faculty of Social and Behavioural Sciences of Utrecht University, filed under number 19-215. A copy of the approval form can be found in the Documents folder. 
 
 ### *Acces*
 
