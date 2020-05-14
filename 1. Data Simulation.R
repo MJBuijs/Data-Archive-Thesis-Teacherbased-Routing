@@ -1,13 +1,3 @@
-## ---------------------------------------------------------------------------------------------------------------------------------
-
-# R version 3.6.1 (2019-07-05) -- "Action of the Toes"
-# Copyright (C) 2019 The R Foundation for Statistical Computing
-# Platform: x86_64-w64-mingw32/x64 (64-bit)
-# Run on a i7 processor with 6 cores ~ 2.59 GHz and 16GB RAM; approximate runtime; 24 hours. 
-
-## ---------------------------------------------------------------------------------------------------------------------------------
-
-
 rm(list = ls())
 set.seed(42)
 
